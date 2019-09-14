@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Items from '../components/Items';
 
-const Home = props => (
-    <div>
-        <p>Home</p>
-    </div>
-)
-export default Home
+const Home = (props) => (
+	<div>
+		<Items page={props.query.page || 1} />
+	</div>
+);
+export default Home;
