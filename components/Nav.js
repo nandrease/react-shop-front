@@ -15,9 +15,6 @@ const Nav = () => (
 						<Link href="/sell">
 							<a>Sell</a>
 						</Link>
-						<Link href="/signup">
-							<a>Signup</a>
-						</Link>
 						<Link href="/orders">
 							<a>Orders</a>
 						</Link>
@@ -27,9 +24,14 @@ const Nav = () => (
 						<SignOut />
 					</>
 					) || (
-					<Link href="/signin">
-						<a>Signin</a>
-					</Link>
+					<>
+						<Link href="/signup">
+							<a>Signin</a>
+						</Link>
+						<Link href="/signup">
+							<a>Signup</a>
+						</Link>
+					</>
 				)}
 				
 			</NavStyles>
