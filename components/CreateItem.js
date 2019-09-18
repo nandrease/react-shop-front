@@ -30,7 +30,6 @@ class CreateItem extends Component {
 	};
 	handleChange = (e) => {
 		const { name, type, value } = e.target;
-		console.log({ name, type, value });
 		const val = type === 'number' && value ? parseFloat(value) : value;
 		this.setState({ [name]: val });
 	};
@@ -62,7 +61,6 @@ class CreateItem extends Component {
 							// call the mutation
 							const res = await createItem();
 							// change them to single item page
-							console.log(res);
 							Router.push({
 								pathname: '/item',
 								query: { id: res.data.createItem.id }

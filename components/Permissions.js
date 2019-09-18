@@ -67,7 +67,6 @@ class UserPermissions extends React.Component {
 		const checkbox = e.target;
 		//take a copy of the current permissions
         let updatedPermissions = [ ...this.state.permissions ];
-        console.log({updatedPermissions})
 		if (checkbox.checked) {
             updatedPermissions.push(checkbox.value);
         } else {
