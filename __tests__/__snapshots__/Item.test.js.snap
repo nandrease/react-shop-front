@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Item/> renders and matches the snapshot 1`] = `
+<ItemStyles__Item>
+  <img
+    alt="Suzuki GSXR"
+    src="bike.jpg"
+  />
+  <Title>
+    <Link
+      href={
+        Object {
+          "pathname": "/item",
+          "query": Object {
+            "id": "49EO",
+          },
+        }
+      }
+    >
+      <a>
+        Suzuki GSXR
+      </a>
+    </Link>
+  </Title>
+  <PriceTag>
+    20 €
+  </PriceTag>
+  <p>
+    750cc hästi sõitev ratas
+  </p>
+  <div
+    className="buttonList"
+  >
+    <Link
+      href={
+        Object {
+          "pathname": "update",
+          "query": Object {
+            "id": "49EO",
+          },
+        }
+      }
+    >
+      <a>
+        Edit 🤣🧨
+      </a>
+    </Link>
+    <AddToCart
+      id="49EO"
+    />
+    <DeleteItem
+      id="49EO"
+    >
+      Delete this item
+    </DeleteItem>
+  </div>
+</ItemStyles__Item>
+`;
