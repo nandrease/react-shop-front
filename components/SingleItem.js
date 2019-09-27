@@ -14,15 +14,15 @@ const SingleItemStyles = styled.div`
 	grid-auto-flow: column;
 	min-height: 800px;
 
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
-    .details {
-        margin: 3rem;
-        font-size: 2rem;
-    }
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+	.details {
+		margin: 3rem;
+		font-size: 2rem;
+	}
 `;
 
 const SINGLE_ITEM_QUERY = gql`
@@ -69,3 +69,4 @@ class SingleItem extends Component {
 }
 
 export default SingleItem;
+export { SINGLE_ITEM_QUERY };
