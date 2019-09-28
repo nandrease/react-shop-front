@@ -30,11 +30,9 @@ class RemoveFromCart extends Component {
 	// This will get called as soon as we delete an item
 	// and a response gets back from the server
 	update = (cache, payload) => {
-		// 1. read the cache
-		const data = cache.readQuery({
-			query: CURRENT_USER_QUERY
-		});
-		// 2. remove item from the cart
+		// 1. first read the cache
+		const data = cache.readQuery({ query: CURRENT_USER_QUERY });
+		// 2. remove that item from the cart
 		const cartItemId = payload.data.removeFromCart.id;
 		data.me.cart = data.me.cart.filter((cartItem) => cartItem.id !== cartItemId);
 		// 3. write it back to the cache
@@ -66,3 +64,4 @@ class RemoveFromCart extends Component {
 }
 
 export default RemoveFromCart;
+export { REMOVE_FROM_CART_MUTATION };
